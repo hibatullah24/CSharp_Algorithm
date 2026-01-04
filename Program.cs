@@ -14,6 +14,11 @@ namespace Algorithem
                 Console.WriteLine("Choose a Services You Need: ");
                 Console.WriteLine("1. Calculate Average");
                 Console.WriteLine("2. Check if a Number is Even or Odd");
+                Console.WriteLine("3. Find the Smallest Number in a List");
+                Console.WriteLine("4. Count Positive and Negative Numbers");
+                Console.WriteLine("5. Remove Duplicates from a List");
+                Console.WriteLine("6. Find All Prime Numbers ");
+
 
                 int option = int.Parse(Console.ReadLine());
 
@@ -57,6 +62,34 @@ namespace Algorithem
                         }
 
                         break;
+
+                    case 3:
+                        Console.WriteLine("How many Numbers you Needs:");
+                        int N = int.Parse(Console.ReadLine());
+                        int[] num = new int[N];
+
+                        for (int i=0; i<N; i++)
+                        {
+                            Console.WriteLine("Enter Number:");
+                            num[i] = int.Parse(Console.ReadLine());
+                        }
+
+                        int smallest = 0;
+                        for (int i=0; i<N; i++)
+                        {
+                            if (num [i] < smallest)
+                            {
+                                smallest = num[i];
+                            }
+                        }
+
+                        Console.WriteLine(" Smallest Number in the List is :" + smallest);
+
+                        break;
+
+
+
+
 
 
 
