@@ -87,6 +87,41 @@ namespace Algorithem
 
                         break;
 
+                    case 4:
+                        Console.WriteLine("How many Numbers you Needs:");
+                        int NP = int.Parse(Console.ReadLine());
+                        int[] NPnum = new int[NP];
+
+                        for (int i = 0; i < NP; i++)
+                        {
+                            Console.WriteLine("Enter Number:");
+                            NPnum[i] = int.Parse(Console.ReadLine());
+                        }
+
+                        int PositiveCount = 0;
+                        int NegativeCount = 0;
+
+                        for (int i = 0; i < NP; i++)
+                        {
+                            if (NPnum[i] > 0)
+                            {
+                                PositiveCount++;
+                            }
+
+                            else
+                            {
+                                NegativeCount++;
+                            }
+                        }
+
+                        Console.WriteLine("Count of Positive Number in List is = " + PositiveCount);
+                        Console.WriteLine("Count of Negative Number in List is = " + NegativeCount);
+
+                        break;
+
+
+
+
 
 
 
