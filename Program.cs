@@ -119,6 +119,47 @@ namespace Algorithem
 
                         break;
 
+                    case 5:
+                        Console.WriteLine(" How Many Numbers you Needs:");
+                        int D = int.Parse(Console.ReadLine());
+                        int[] Dlist = new int[D];
+
+                        for (int i =0; i<D; i++)
+                        {
+                            Console.WriteLine("Enter Number:");
+                            Dlist[i] = int.Parse(Console.ReadLine());
+                        }
+
+                        int[] unique = new int[D];
+                        int UnCount = 0;
+
+                        for (int i=0; i<D; i++)
+                        {
+                            bool Duplicate = false;
+
+                            for (int l=0; l<UnCount; l++)
+                            {
+                                if (Dlist[i] == unique[l])
+                                {
+                                    Duplicate = true;
+                                }
+                            }
+
+                            if (Duplicate==false)
+                            {
+                                unique[UnCount] = Dlist[i];
+                                UnCount++;
+                            }
+                        }
+
+                        Console.WriteLine("List After Remove Duplicate:");
+                        for (int i=0; i<UnCount; i++)
+                        {
+                            Console.WriteLine(unique[i] + " ");
+                        }
+                        
+                        break;
+
 
 
 
