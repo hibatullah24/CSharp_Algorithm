@@ -43,6 +43,21 @@ namespace Algorithem
                         Console.WriteLine("The Average is = " + avg);
                         break;
 
+                    case 2:
+                        Console.WriteLine("Enter Number:");
+                        int number = int.Parse(Console.ReadLine());
+
+                        if (number % 2 == 0)
+                        {
+                            Console.WriteLine("Even");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Odd");
+                        }
+
+                        break;
+
 
 
                     default:
