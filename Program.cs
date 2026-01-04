@@ -161,6 +161,32 @@ namespace Algorithem
                         break;
 
 
+                    case 6:
+                        Console.WriteLine("Enter N:");
+                        int P = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Prime Numbers for Selected Number are:");
+
+                        for (int FPrime = 2; FPrime <= P; FPrime++)
+                        {
+                            bool isprime = true;
+                            for (int div = 2; div < FPrime; div++)
+                            {
+                                if (FPrime % div ==0)
+                                {
+                                    isprime = false;
+
+                                }
+                            }
+
+                            if (isprime == true)
+                            {
+                                Console.WriteLine(FPrime + " ");
+                            }
+                        }
+                        break;
+
+
 
 
 
