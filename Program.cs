@@ -18,7 +18,8 @@ namespace Algorithem
                 Console.WriteLine("4. Count Positive and Negative Numbers");
                 Console.WriteLine("5. Remove Duplicates from a List");
                 Console.WriteLine("6. Find All Prime Numbers ");
-
+                Console.WriteLine("7. Generate Multiplication Table");
+                Console.WriteLine("8. Check Duplicate Value");
 
                 int option = int.Parse(Console.ReadLine());
 
@@ -185,6 +186,68 @@ namespace Algorithem
                             }
                         }
                         break;
+
+                    case 7:
+                        Console.WriteLine("Enter Number:");
+                        int PNum = int.Parse(Console.ReadLine());
+                        int p = 1;
+                        while (p <= PNum)
+                        {
+                            int s = 1;
+
+                            while (s <= PNum)
+                            {
+                                int M = p * s;
+                                Console.Write(M + " ");
+                                s++;
+
+                            }
+                            Console.WriteLine();
+                            p++;
+                        }
+                            break;
+
+                    case 8:
+                        Console.WriteLine("How Many Numbers you Needs:");
+                        int DN = int.Parse(Console.ReadLine());
+                        int[] DList = new int[DN];
+
+                        for (int i = 0; i < DN; i++)
+                        {
+                            Console.WriteLine("Enter Number:");
+                            DList[i] = int.Parse(Console.ReadLine());
+                        }
+
+                        bool hasDuplicate = false;
+                        for (int i=0; i <DN; i++)
+                        {
+                            for (int j = i +1; j < DN; j++)
+                            {
+                                if (DList[i] == DList[j])
+                                {
+                                    hasDuplicate = true;
+                                    break;
+                                }
+                            }
+
+                        }
+
+                        if (hasDuplicate)
+                        {
+                            Console.WriteLine(" Has Duplicate");
+                        }
+                        
+                        else
+                        {
+                            Console.WriteLine("No Duplicate");
+                        }
+
+
+
+
+
+                        break;
+
 
 
 
