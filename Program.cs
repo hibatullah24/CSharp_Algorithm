@@ -187,7 +187,9 @@ namespace Algorithem
                         }
                         break;
 
+
                     case 7:
+
                         Console.WriteLine("Enter Number:");
                         int PNum = int.Parse(Console.ReadLine());
                         int p = 1;
@@ -218,21 +220,33 @@ namespace Algorithem
                             DList[i] = int.Parse(Console.ReadLine());
                         }
 
+
                         bool hasDuplicate = false;
+
+                        int count = 0;
+
                         for (int i=0; i <DN; i++)
                         {
                             for (int j = i +1; j < DN; j++)
                             {
                                 if (DList[i] == DList[j])
                                 {
+
                                     hasDuplicate = true;
                                     break;
+
+                                    count++;
+
                                 }
                             }
 
                         }
 
+
                         if (hasDuplicate)
+
+                        if (count > 0)
+
                         {
                             Console.WriteLine(" Has Duplicate");
                         }
@@ -246,8 +260,12 @@ namespace Algorithem
 
 
 
+
                         break;
 
+
+
+                        break;
 
 
 
