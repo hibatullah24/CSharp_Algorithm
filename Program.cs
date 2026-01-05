@@ -20,6 +20,7 @@ namespace Algorithem
                 Console.WriteLine("6. Find All Prime Numbers ");
                 Console.WriteLine("7. Generate Multiplication Table");
                 Console.WriteLine("8. Check Duplicate Value");
+                Console.WriteLine("");
 
                 int option = int.Parse(Console.ReadLine());
 
@@ -222,9 +223,6 @@ namespace Algorithem
 
 
                         bool hasDuplicate = false;
-
-                        int count = 0;
-
                         for (int i=0; i <DN; i++)
                         {
                             for (int j = i +1; j < DN; j++)
@@ -235,7 +233,7 @@ namespace Algorithem
                                     hasDuplicate = true;
                                     break;
 
-                                    count++;
+  
 
                                 }
                             }
@@ -244,34 +242,14 @@ namespace Algorithem
 
 
                         if (hasDuplicate)
-
-                        if (count > 0)
-
                         {
-                            Console.WriteLine(" Has Duplicate");
+                            Console.WriteLine("The List has Duplicate Values.");
                         }
-                        
                         else
                         {
-                            Console.WriteLine("No Duplicate");
+                            Console.WriteLine("The List has No Duplicate Values.");
                         }
-
-
-
-
-
-
                         break;
-
-
-
-                        break;
-
-
-
-
-
-
 
 
 
